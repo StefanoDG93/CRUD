@@ -17,17 +17,188 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: black;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+button {
+  border-radius: 10px;
+  padding: 0.6em 0.8em;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  border-radius: 10px;
+  padding: 0.6em 0.8em;
+  color: white;
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.AddButton:disabled {
+  border-radius: 10px;
+  padding: 0.6em 0.8em;
+  color: white;
+  background: gray;
+  cursor: pointer;
+  box-shadow:
+  0px 0px 0px 1px #696969 inset,
+  0px 0px 0px 1px #696969 inset,
+  0px 4px 0px 0px #696969,
+  0px 2px 0px 0px #696969,
+  0px 5px 0px 0px rgba(0,0,0,.15);
+}
+
+.AddButton {
+  border-radius: 10px;
+  padding: 0.6em 0.8em;
+  color: white;
+  background: green;
+  cursor: pointer;
+  box-shadow:
+  0px 0px 0px 1px #006400 inset,
+  0px 0px 0px 1px #006400 inset,
+  0px 4px 0px 0px #006400,
+  0px 2px 0px 0px #006400,
+  0px 5px 0px 0px rgba(0,0,0,.15);
+}
+
+.AddButton:active {
+  border-radius: 10px;
+  padding: 0.6em 0.8em;
+  color: white;
+  background: green;
+  cursor: pointer;
+  box-shadow:
+  0px 0px 0px 1px #006400 inset,
+  0px 0px 0px 1px #006400 inset,
+  0px 0px 0px 2px #006400,
+  0px 1px 0px 0px #006400,
+  0px 2px 0px 0px rgba(0,0,0,.15);
+}
+
+.DeleteButton {
+  border-radius: 10px;
+  padding: 0.6em 0.8em;
+  color: white;
+  background: red;
+  cursor: pointer;
+  box-shadow:
+  0px 0px 0px 1px #B22222 inset,
+  0px 0px 0px 1px #B22222 inset,
+  0px 4px 0px 0px #B22222,
+  0px 2px 0px 0px #B22222,
+  0px 5px 0px 0px rgba(0,0,0,.15);
+}
+
+.DeleteButton:active {
+  border-radius: 10px;
+  padding: 0.6em 0.8em;
+  color: white;
+  background: red;
+  cursor: pointer;
+  box-shadow:
+  0px 0px 0px 1px #B22222 inset,
+  0px 0px 0px 1px #B22222 inset,
+  0px 0px 0px 2px #B22222,
+  0px 1px 0px 0px #B22222,
+  0px 2px 0px 0px rgba(0,0,0,.15);
+}
+
+.EditButton {
+  border-radius: 10px;
+  padding: 0.6em 0.8em;
+  color: white;
+  background: orange;
+  cursor: pointer;
+  box-shadow:
+  0px 0px 0px 1px #CD5C5C inset,
+  0px 0px 0px 1px #CD5C5C inset,
+  0px 4px 0px 0px #CD5C5C,
+  0px 2px 0px 0px #CD5C5C,
+  0px 5px 0px 0px rgba(0,0,0,.15);
+}
+
+.EditButton:active {
+  border-radius: 10px;
+  padding: 0.6em 0.8em;
+  color: white;
+  background: orange;
+  cursor: pointer;
+  box-shadow:
+  0px 0px 0px 1px #CD5C5C inset,
+  0px 0px 0px 1px #CD5C5C inset,
+  0px 0px 0px 2px #CD5C5C,
+  0px 1px 0px 0px #CD5C5C,
+  0px 2px 0px 0px rgba(0,0,0,.15);
+}
+
+.EditButtonModal {
+  border-radius: 10px;
+  padding: 0.6em 0.8em;
+  color: white;
+  background: green;
+  cursor: pointer;
+  box-shadow:
+  0px 0px 0px 1px #006400 inset,
+  0px 0px 0px 1px #006400 inset,
+  0px 4px 0px 0px #006400,
+  0px 2px 0px 0px #006400,
+  0px 5px 0px 0px rgba(0,0,0,.15);
+}
+
+.EditButtonModal:active {
+  border-radius: 10px;
+  padding: 0.6em 0.8em;
+  color: white;
+  background: green;
+  cursor: pointer;
+  box-shadow:
+  0px 0px 0px 1px #006400 inset,
+  0px 0px 0px 1px #006400 inset,
+  0px 0px 0px 2px #006400,
+  0px 1px 0px 0px #006400,
+  0px 2px 0px 0px rgba(0,0,0,.15);
+}
+
+.ViewButton {
+  border-radius: 10px;
+  padding: 0.6em 0.8em;
+  color: white;
+  background: blue;
+  cursor: pointer;
+  box-shadow:
+  0px 0px 0px 1px #00008B inset,
+  0px 0px 0px 1px #00008B inset,
+  0px 4px 0px 0px #00008B,
+  0px 2px 0px 0px #00008B,
+  0px 5px 0px 0px rgba(0,0,0,.15);
+}
+
+.ViewButton:active {
+  border-radius: 10px;
+  padding: 0.6em 0.8em;
+  color: white;
+  background: blue;
+  cursor: pointer;
+  box-shadow:
+  0px 0px 0px 1px #00008B inset,
+  0px 0px 0px 1px #00008B inset,
+  0px 0px 0px 2px #00008B,
+  0px 1px 0px 0px #00008B,
+  0px 2px 0px 0px rgba(0,0,0,.15);
+}
+
+thead {
+  border-top: 1px solid #ddd;  
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
 }
